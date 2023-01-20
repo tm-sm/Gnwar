@@ -1,0 +1,20 @@
+gnome war todo list:
+
+PROBLEMAS ACTUALES:
+-enemy commander deberia comprar un total de tropas, y despues dividirlas entre todos los spawners --LISTO
+
+-cambiar el nombre --LISTO
+-agregar la funcionalidad de spawnear con el mouse-- LISTO
+-hacer la pantalla de game over --LISTO
+-separar main y world --LISTO
+-implementar la camara --LISTO
+-agregar estructuras --LISTO eh
+
+-agregar un puntaje
+-agregar puntos para comprar tropas
+-agregar levelling
+
+ mas adelante:
+-agregar sonidos
+-agregar mas animaciones (cuando llegan los enemy)
+-agregar mas tipos de tropas

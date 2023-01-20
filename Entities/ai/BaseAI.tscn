@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Entities/BaseEntity.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/BaseAI.gd" type="Script" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 250.922
+
+[node name="BaseAI" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+movement_blocked = false
+
+[node name="AttackRange" parent="." index="2"]
+monitorable = false
+
+[node name="DetectionRange" type="Area2D" parent="." index="3"]
+input_pickable = false
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionRange" index="0"]
+shape = SubResource( 1 )
+
+[connection signal="body_entered" from="AttackRange" to="." method="_on_AttackRange_body_entered"]
+[connection signal="body_exited" from="AttackRange" to="." method="_on_AttackRange_body_exited"]
+[connection signal="body_entered" from="DetectionRange" to="." method="_on_DetectionRange_body_entered"]
+[connection signal="body_exited" from="DetectionRange" to="." method="_on_DetectionRange_body_exited"]

@@ -1,0 +1,29 @@
+Progress Report 16/1
+
+-implemented spawn points and objectives
+-implemented game over conditions 
+-implemented a menu screen, a pause screen and a game over screen
+-improved gnome's AI and sprites
+
+Progress Report 17/1
+
+-added strength and base hp sliders for AI vs AI mode
+-implemented cinematics
+-added a camera
+-improved the menu screen
+-implemented a basic GUI
+
+Progress Report 18/1
+
+-improved performance when too many bodies are on the screen
+-added wave survival game mode
+-added wave survival intro
+-added archer towers
+
+Progress Report 19/1
+
+-improved gnome tower's ai and sprites
+-added antignome spawner sprite
+-added basic patrol unit
+-added gnome fortress
+-added the ability to switch units in survival mode

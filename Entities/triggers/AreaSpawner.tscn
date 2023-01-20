@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Entities/triggers/Spawner.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/AreaSpawner.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[node name="AreaSpawner" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+height = 250
+width = 250
+
+[node name="SpawnArea" type="Area2D" parent="." index="1"]
+
+[node name="AreaPreview" type="CollisionShape2D" parent="SpawnArea" index="0"]
+shape = SubResource( 1 )
